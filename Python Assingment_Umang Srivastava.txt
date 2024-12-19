@@ -1,0 +1,27 @@
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+import  time
+driver = webdriver.Chrome()
+driver.get("https://docs.google.com/forms/d/e/1FAIpQLSdUCd3UWQ3VOgeg0ZzNeT-xzNawU8AJ7Xidml-w1vhfBcvBWQ/viewform")
+element=driver.find_element(By.XPATH, value="//input[@aria-labelledby='i1 i4']")
+element.send_keys("Umang Srivastava")
+time.sleep(1000)
+driver.find_element_by_xpath("//input[@aria-labelledby='i6 i9']").sendKeys("8417807246")
+time.sleep(1000)
+driver.find_element_by_xpath("//input[@aria-labelledby='i11 i14']").sendKeys("umangsrivastav18@gmail.com")
+time.sleep(1000)
+driver.find_element_by_xpath("//textarea[@class='KHxj8b tL9Q4c']").sendKeys("17/104/Vasundhara Enclave Phase-1/Taramandal/Gorakhpur/Uttar Pradesh")
+time.sleep(1000)
+driver.find_element_by_xpath("//input[@aria-labelledby='i21 i24']").sendKeys("273017")
+time.sleep(1000)
+driver.find_element_by_xpath("//input[@aria-labelledby='i31']").sendKeys("02/18/1998")
+time.sleep(1000)
+driver.find_element_by_xpath("//input[@aria-labelledby='i32 i35']").sendKeys("Male")
+time.sleep(1000)
+driver.find_element_by_xpath("//input[@aria-labelledby='i37 i40']").sendKeys("GNFPYC")
+time.sleep(1000)
+driver.find_element_by_xpath("//span[@class='NPEfkd RveJvd snByac']").click()
+time.sleep(1500)
+driver.quit();
